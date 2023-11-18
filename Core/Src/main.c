@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,10 +90,8 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-const char message[] = "Hello world!\r\n";
-HAL_UART_Transmit(&huart2, message, strlen(message), HAL_MAX_DELAY);
-
-
+  const char message[] = "Hello world!\r\n";
+  HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -156,7 +154,7 @@ void SystemClock_Config(void)
   * @param None
   * @retval None
   */
-static void MX_USART2__Init(voiUARTd)
+static void MX_USART2_UART_Init(void)
 {
 
   /* USER CODE BEGIN USART2_Init 0 */

@@ -13,7 +13,8 @@
       "debugServerPath": "${command:vscode-embedded.st.gdbserver}",
       "debugServerArgs": "--stm32cubeprogrammer-path ${command:vscode-embedded.st.cubeprogrammer} --swd --port-number 3333",
       "serverStarted": "Waiting for connection on port .*\\.\\.\\.",
-      "stopAtConnect": true,
+      "stopAtConnect": false,
+      "externalConsole": false,
       "postRemoteConnectCommands": [
         {
           "text": "load build/debug/build/Forbot_4.elf"

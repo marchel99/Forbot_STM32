@@ -105,17 +105,26 @@ int main(void)
 
   //const char message[] = "Hello world!\r\n";
   //HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
-  
-  	
+ 
 
-float pi = 3.14f;
-printf("Liczba pi to: %f\n", pi);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+ uint8_t value;
+	  HAL_UART_Receive(&huart2, &value, 1, HAL_MAX_DELAY);
+ 
+	  printf("Odebrano: %c\n", value);
+
+
+
+
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -26,3 +26,7 @@
 2188	2862	7220329019634451	CMakeFiles/Forbot_4.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj	d919952f0e81f7b6
 3	374	7220354778297096	CMakeFiles/Forbot_4.dir/Core/Src/main.c.obj	71aa7742272190dc
 376	836	7220354781707489	Forbot_4.elf	76a8ab666ecf4cea
+3	356	7220358233050932	CMakeFiles/Forbot_4.dir/Core/Src/main.c.obj	71aa7742272190dc
+357	802	7220358236314718	Forbot_4.elf	76a8ab666ecf4cea
+3	346	7220358486497602	CMakeFiles/Forbot_4.dir/Core/Src/main.c.obj	71aa7742272190dc
+347	806	7220358489677817	Forbot_4.elf	76a8ab666ecf4cea
